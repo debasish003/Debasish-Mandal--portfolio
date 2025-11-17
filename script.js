@@ -1,5 +1,9 @@
 const menuIconMenu = document.getElementById('iconForNav');
 const navIconSwitch = document.getElementById('nav-icon');
+const modeBtn = document.getElementById('mode');
+const bodyClass = document.getElementById('main-body');
+console.log(bodyClass);
+console.log(modeBtn.className);
 console.log(menuIconMenu.className);
     menuIconMenu.addEventListener('click',()=>{
         if(menuIconMenu.className== 'bi bi-list'){
@@ -23,3 +27,22 @@ console.log(menuIconMenu.className);
 
 console.log(menuIconMenu.className);
 //<i class="fa-solid fa-xmark"></i> cross icon
+modeBtn.addEventListener('click',()=>{
+    if(modeBtn.className =='bi bi-brightness-low-fill'){
+        modeBtn.classList.add('bi-moon-fill');
+        modeBtn.classList.remove('bi-brightness-low-fill');
+        // bodyClass.style.backgroundImage = 'none';
+        // bodyClass.style.backgroundImage = "url('whiteBackground.jpg')";
+        // bodyClass.style.bodySize = 'cover';
+        // bodyClass.style.backgroundAttachment = 'fixed';
+        
+    }
+    else{
+        modeBtn.classList.add('bi-brightness-low-fill');
+        modeBtn.classList.remove('bi-moon-fill');
+        // bodyClass.style.backgroundImage = 'none';
+        // bodyClass.style.backgroundImage = "url('./logos/blackBackground.jpg')";
+        // bodyClass.style.backgroundAttachment = 'fixed';
+    }
+});
+/* <i class="bi bi-moon-fill"></i>   moon icon*/
