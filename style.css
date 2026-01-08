@@ -2,14 +2,23 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  color: aliceblue;
+  
 }
 html,body{
   height: 100%;
   width: 100%;
+}
+.mainDark-background-img{ 
   background-image: url('./logos/blackBackground.jpg');
   background-size: cover;
   background-attachment: fixed;
+  color: aliceblue;
+}
+.mainLight-background-img{
+  background-image: url('./logos/whiteBackground.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
 }
 header{
   top: 0%;
@@ -35,9 +44,17 @@ header{
   cursor: pointer;
 }
 #mode{
+  /* color: yellow; */
+  
+  opacity: 1;
+}
+.bi-brightness-low-fill{
   color: yellow;
   font-size: 25px;
-  opacity: 1;
+}
+.bi-moon-fill{
+  font-size: 20px;
+  color: gray;
 }
 #nav-menu{
   width: 75%;
@@ -70,7 +87,7 @@ header{
 }
 #iconForNav{
   margin-right: 10px;
-  color: black;
+  /* color: black; */
   font-size: 25px;
 }
 .icon-div{
@@ -144,9 +161,29 @@ header{
 }
 
 .profile-div{
+  margin: 15px;
   display: flex;
   justify-content: center;
 }
+
+.about-heading{
+  margin-left: 6%;
+  margin-bottom: 4%;
+}
+.about-containt-div{
+  margin-left: 10%;
+  margin-right: 4%;
+  background-color: rgb(68, 48, 59);
+  border: 2px solid rgb(122, 172, 41);
+  border-radius: 30px;
+  box-shadow: 2px 3px 1px gray;
+}
+.about-containt{
+  margin:  10px 20px;
+  font-weight: 500;
+  opacity: 1;
+}
+
 /* Skill section */
 #skill-main-div{
   height: 90vh;
